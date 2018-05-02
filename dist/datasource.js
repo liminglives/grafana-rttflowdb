@@ -151,6 +151,7 @@ System.register(['lodash'], function (_export, _context) {
             var targets = _.map(options.targets, function (target) {
               return {
                 target: _this.templateSrv.replace(target.target, options.scopedVars, 'regex'),
+                key: target.key,
                 refId: target.refId,
                 hide: target.hide,
                 type: target.type || 'timeserie'
