@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grafana/simple-json-datasource.git"
+    "url": "git+https://github.com/liminglives/grafana-rttflowdb",
   },
   "author": "",
   "license": "ISC",
