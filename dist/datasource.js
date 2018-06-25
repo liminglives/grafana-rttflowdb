@@ -152,6 +152,7 @@ System.register(['lodash'], function (_export, _context) {
               return {
                 target: _this.templateSrv.replace(target.target, options.scopedVars, 'regex'),
                 key: target.key,
+                column: target.column,
                 refId: target.refId,
                 hide: target.hide,
                 type: target.type || 'timeserie'
