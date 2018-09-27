@@ -1,4 +1,4 @@
-## Simple JSON Datasource - a generic backend datasource
+## RTTFLOWDB Datasource - a generic backend datasource
 
 More documentation about datasource plugins can be found in the [Docs](https://github.com/grafana/grafana/blob/master/docs/sources/plugins/developing/datasources.md).
 
@@ -15,15 +15,9 @@ Your backend needs to implement 4 urls:
 
 To install this plugin using the `grafana-cli` tool:
 ```
-sudo grafana-cli plugins install grafana-simple-json-datasource
+sudo cp grafana-rttflowdb/ /var/lib/grafana/plugins/rttflowdb -r
 sudo service grafana-server restart
 ```
-See [here](https://grafana.com/plugins/grafana-simple-json-datasource/installation) for more
-information.
-
-### Example backend implementations
-- https://github.com/bergquist/fake-simple-json-datasource
-- https://github.com/smcquay/jsonds
 
 ### Query API
 
@@ -192,8 +186,5 @@ This plugin requires node 6.10.0
  - Template support for metrics queries
  - Template support for annotation queries
 
-### If using Grafana 2.6
-NOTE!
-for grafana 2.6 please use [this version](https://github.com/grafana/simple-json-datasource/commit/b78720f6e00c115203d8f4c0e81ccd3c16001f94)
 
 Copy the data source you want to /public/app/plugins/datasource/. Then restart grafana-server. The new data source should now be available in the data source type dropdown in the Add Data Source View.
